@@ -170,6 +170,7 @@ p {
     max-height: 35vh;
     padding-top: 4vh;
     background-image: url("../img/creepycuterobot-alt.png");
+    background-size: cover;
     background-color: #06D6A0;
 }
 
