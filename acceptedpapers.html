@@ -18,9 +18,8 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-
-    <div id="about-wrapper">
-        <div id="home-navigation">
+<div class="content-wrapper">
+    <div id="home-navigation">
             <span class="burger">
                 <button class="burger-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
                     <svg width="4vh" height="4vh" viewBox="0 0 100 100">
@@ -31,25 +30,24 @@
                 </button>
             </span>
 
-            <div id="nav-list">
-                <ul class="nav-list-elements">
-                    <li><a id="about-link" href="about.html">About</a></li>
-                    <li><a id="call-link" href="callforpapers.html">Call for Papers</a></li>
-                    <li><a id="accepted-link" href="acceptedpapers.html">Accepted Papers</a></li>
-                    <li><a id="orga-link" href="organisers.html">Organizers</a></li>
-                    <li><a id="contact-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="about-title">
-
-        </div>
-        <div id="about-info">
-
+        <div id="nav-list">
+            <ul class="nav-list-elements">
+                <li><a id="about-link" href="index.html">About</a></li>
+                <li><a id="call-link" href="callforpapers.html">Call for Papers</a></li>
+                <li><a id="accepted-link" href="acceptedpapers.html">Accepted Papers</a></li>
+                <li><a id="orga-link" href="organisers.html">Organizers</a></li>
+            </ul>
         </div>
     </div>
+    <div id="about-title">
 
-    <script type="text/javascript" src="js/burger-menu.js"></script>
+    </div>
+    <div id="about-info">
+
+    </div>
+</div>
+
+<script type="text/javascript" src="js/burger-menu.js"></script>
 
 </body>
 </html>

@@ -18,9 +18,8 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-
-    <div id="about-wrapper">
-        <div id="home-navigation">
+<div class="content-wrapper">
+    <div id="home-navigation">
             <span class="burger">
                 <button class="burger-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
                     <svg width="4vh" height="4vh" viewBox="0 0 100 100">
@@ -31,25 +30,124 @@
                 </button>
             </span>
 
-            <div id="nav-list">
-                <ul class="nav-list-elements">
-                    <li><a id="about-link" href="about.html">About</a></li>
-                    <li><a id="call-link" href="callforpapers.html">Call for Papers</a></li>
-                    <li><a id="accepted-link" href="acceptedpapers.html">Accepted Papers</a></li>
-                    <li><a id="orga-link" href="organisers.html">Organizers</a></li>
-                    <li><a id="contact-link" href="contact.html">Contact</a></li>
-                </ul>
+        <div id="nav-list">
+            <ul class="nav-list-elements">
+                <li><a id="about-link" href="index.html">About</a></li>
+                <li><a id="call-link" href="callforpapers.html">Call for Papers</a></li>
+                <!--<li><a id="accepted-link" href="acceptedpapers.html">Accepted Papers</a></li>-->
+                <li><a id="orga-link" href="organisers.html">Organizers</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-title">
+        <h4>Organisers</h4>
+    </div>
+    <div class="content-text">
+        <p> We are excited about the organisation committee of this workshop with expertise in diverse fields. Together,
+            the organizers have a history in a variety of topics including human-robot interaction, natural language
+            processing, conversational user interfaces, dark patterns, multi-modal communication, as well as pervasive and
+            persuasive technologies. Below, we are happy to introduce each co-organizator individually.
+        </p>
+        <br><hr><br>
+        <div id="organisers-wrapper">
+            <div class="organiser-content">
+                <img class="organiser-portrait" src="img/avanesi.jpg">
+                <p class="organiser-description">
+                    <b>Vino Avanesi</b> is a Ph.D. student in the Digital Media Lab at the University of Bremen,
+                    where he does research on malicious patterns in conversational
+                    agents from an ethical and political economic perspective.
+                </p>
             </div>
-        </div>
-        <div id="about-title">
 
-        </div>
-        <div id="about-info">
+            <div class="organiser-content">
+                <p class="organiser-description">
+                    <b>Johanna Rockstroh</b> is a Ph.D. Student in the Digital Media Lab at the University of Bremen,
+                    where she does research on how to increase a chatbot’s empathy by using sentiment
+                    analysis and knowledge graphs.
+                </p>
+                <img class="organiser-portrait" src="img/rockstroh.jpg">
+            </div>
+
+            <div class="organiser-content">
+                <img class="organiser-portrait" src="img">
+                <p class="organiser-description">
+                    <b>Thomas Mildner</b> is a Ph.D. student at the Digital Media Lab at the University
+                    of Bremen. His research focuses on ethical design and developing
+                    technologies to support autonomous decision-making. His work
+                    thereby considers social media platforms but also ubiquitous technologies including CUIs.
+                </p>
+            </div>
+
+            <div class="organiser-content">
+                <p class="organiser-description">
+                    <b>Nima Zargham</b> is a Ph.D. student in the Digital Media Lab at the University of
+                    Bremen. His research focuses on human-centred approaches for
+                    designing desirable speech-based systems.
+                </p>
+                <img class="organiser-portrait" src="img">
+            </div>
+
+            <div class="organiser-content">
+                <img class="organiser-portrait" src="img">
+                <p class="organiser-description">
+                    <b>Maximilian A. Friehs</b> is an Assistant Professor at the University
+                    of Twente, Netherlands. His research focuses on manipulating human performance,
+                    cognition and experiences. This also includes
+                    investigating interactions between humans or human-virtual agent
+                    interactions under different constraints in order to elicit specific
+                    experiences or behaviours
+                </p>
+            </div>
+
+            <div class="organiser-content">
+                <p class="organiser-description">
+                    <b>Leon Reicherts</b> is a Ph.D. student at the UCL Interaction Centre.
+                    His research focuses on how probing conversational interfaces
+                    can augment users’ thought processes. The interfaces he designs
+                    achieve this by prompting users to explore alternative perspectives
+                    and approaches for the cognitive task at hand.
+                </p>
+                <img class="organiser-portrait" src="img">
+            </div>
+
+            <div class="organiser-content">
+                <img class="organiser-portrait" src="img">
+                <p class="organiser-description">
+                    <b>Dimosthenis Kontogiorgos</b> is a postdoctoral researcher at the University of
+                    Potsdam and is interested in how conversational agents’ embodiment and
+                    non-verbal behaviours affect the process of establishing,
+                    maintaining and repairing common ground.
+                </p>
+            </div>
+
+            <div class="organiser-content">
+                <p class="organiser-description">
+                    <b>Nina Wenig </b> is a postdoctoral researcher in the Digital Media Lab at the University
+                    of Bremen and works on applying artificial intelligence in new user
+                    interfaces. Her research focus is on automatic and manual image
+                    annotation, chatbots and natural language understanding.
+                </p>
+                <img class="organiser-portrait" src="img">
+            </div>
+
+            <div class="organiser-content">
+                <img class="organiser-portrait" src="img">
+                <p class="organiser-description">
+                    <b>Rainer Malaka</b> is professor for Digital Media at the University of Bremen. He is
+                    managing director of the Center for Computing Technologies
+                    (Technologiezentrums Informatik und Informationstechnik, TZI) and
+                    director of the PhD program Empowering Digital Media, funded by
+                    the Klaus Tschira foundation. His research focus is on multi-modal
+                    interaction, language understanding, entertainment computing,
+                    and artificial intelligence.
+                </p>
+            </div>
 
         </div>
     </div>
+</div>
 
-    <script type="text/javascript" src="js/burger-menu.js"></script>
+<script type="text/javascript" src="js/burger-menu.js"></script>
 
 </body>
 </html>

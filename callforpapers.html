@@ -18,9 +18,8 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-
-    <div id="about-wrapper">
-        <div id="home-navigation">
+<div class="content-wrapper">
+    <div id="home-navigation">
             <span class="burger">
                 <button class="burger-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
                     <svg width="4vh" height="4vh" viewBox="0 0 100 100">
@@ -31,25 +30,41 @@
                 </button>
             </span>
 
-            <div id="nav-list">
-                <ul class="nav-list-elements">
-                    <li><a id="about-link" href="about.html">About</a></li>
-                    <li><a id="call-link" href="callforpapers.html">Call for Papers</a></li>
-                    <li><a id="accepted-link" href="acceptedpapers.html">Accepted Papers</a></li>
-                    <li><a id="orga-link" href="organisers.html">Organizers</a></li>
-                    <li><a id="contact-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="about-title">
-
-        </div>
-        <div id="about-info">
-
+        <div id="nav-list">
+            <ul class="nav-list-elements">
+                <li><a id="about-link" href="index.html">About</a></li>
+                <li><a id="call-link" href="callforpapers.html">Call for Papers</a></li>
+                <!--<li><a id="accepted-link" href="acceptedpapers.html">Accepted Papers</a></li>-->
+                <li><a id="orga-link" href="organisers.html">Organizers</a></li>
+            </ul>
         </div>
     </div>
+    <div class="content-title">
+        <h4>Call for Papers</h4>
+    </div>
+    <div class="content-text">
+        <p>How much should communicative and social agents disclose that they are not human while their features mislead us to think otherwise? Recent technological advances, including generative AI that produces human-like language, speech syntheses, and realistic visuals, widen the scope of possibilities to create human-computer interactions that may be impossible to distinguish from human-human interaction in specific environments. Meanwhile, scholars of the HCI community have increasingly focused on malicious design strategies, producing a growing list of so-called dark patterns. However, this discourse has primarily been set on screen-based interactions. Considering the availability of technologies and the prevalence of social agents, which, in the wrong hands, can be used in similarly malicious manners, requires special awareness among stakeholders regarding the protection of users.
+            <br><br>
+            This half-day hybrid workshop will kick off this discourse by inviting participants from academia and industry to reflect on these technologies. We will carry over the ongoing discourse of dark patterns to social agents and conversational user interfaces and consider the need for design guidelines and regulations to ensure users' safety.
+            <br><br>
+            Applicants are invited to submit position papers of 3-5 pages in length (ACM single-column format including references) to present their related research findings, novel ideas, and work-in-progress. Submissions will be reviewed by at least two workshop organizers and admitted based on their quality, relevance to the topic, and diversity. For each submission, at least one author must attend the workshop. Key details can be found below:
+        </p>
+        <hr>
+        <h4>Key Dates:</h4>
+        <b>Submission Deadline:</b> 14th of May, 2023 AoE
+        <br>
+        <b>Notification of Acceptance:</b> 28th of May, 2023 AoE
+        <br>
+        <b>Workshop date:</b> 19th of July, 8:00 am - 12:00 pm (UTC+2)
+        <hr>
+        <div class="button-share">
+            <p id="submit-paper">Submit position paper</p>
+        </div>
+    </div>
+</div>
 
-    <script type="text/javascript" src="js/burger-menu.js"></script>
+<script type="text/javascript" src="js/burger-menu.js"></script>
+<script type="text/javascript" src="js/sendMail.js"></script>
 
 </body>
 </html>

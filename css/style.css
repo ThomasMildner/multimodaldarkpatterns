@@ -51,7 +51,7 @@ p {
 
 .nav-home {
     float: left;
-    width: 20vw;
+    width: 100vw;
     height: 20px;
     padding-top: 3vh;
     margin-left: 7.5vw;
@@ -64,6 +64,7 @@ p {
 #nav-list {
     padding-top: 2vh;
     background: rgba(83, 84, 99, 0);
+    width: 100vw;
 }
 
 .nav-list-elements{
@@ -140,6 +141,57 @@ p {
 
 /**********************************/
 /***                            ***/
+/***        MAIN-CONTENT        ***/
+/***                            ***/
+/**********************************/
+
+.content-wrapper {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 12vh 16vh auto;
+    min-height: 100vh;
+    padding-bottom: 10vh;
+    background-color: #ffffff;
+}
+
+.content-title {
+    font-size: 2rem;
+    width: 70vw;
+    margin: 0 auto;
+    height: 10vh;
+}
+
+.content-text {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.button-share {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    height: 5vh;
+    background-color: #06D6A0;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.button-share p{
+    margin: 0;
+}
+
+
+.button-share:hover{
+    background-color: #0c9d77;
+    cursor: pointer;
+}
+
+/**********************************/
+/***                            ***/
 /***            HOME            ***/
 /***                            ***/
 /**********************************/
@@ -181,7 +233,7 @@ p {
     font-size: 1.8em;
 }
 
-#home-title h3 {
+#home-title.h3 {
     color: #8285a0;
     font-weight: 600;
 }
@@ -228,6 +280,33 @@ p {
     padding-left: 2vh;
 }
 
+/**********************************/
+/***                            ***/
+/***         ORGANISERS         ***/
+/***                            ***/
+/**********************************/
+#organisers-wrapper {
+    display: grid;
+    grid-gap: 4vw;
+    grid-template-rows: repeat(auto-fill, max-content);
+}
+
+.organiser-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+}
+
+.organiser-portrait {
+    height: 100%;
+
+}
+
+
+.organiser-description{
+}
+
 
 /**********************************/
 /***                            ***/
@@ -235,18 +314,8 @@ p {
 /***                            ***/
 /**********************************/
 @media only screen and (max-width: 1200px) {
-    .nav-home {
-        width: 30vw;
-        align-self: center;
-        height: 100%;
-    }
-
-    .nav-home a{
-        font-size: 1.8em;
-    }
-
     #nav-list {
-        width: 50vw;
+        width: 100vw;
         float: right;
         padding-right: 2vw;
     }
@@ -254,8 +323,10 @@ p {
     .nav-list-elements{
         width: 100%;
         margin-right: 0;
-        grid-template-columns: repeat(4, 10vw);
+        float: right;
+        grid-template-columns: repeat(auto-fit, auto);
     }
+
     .nav-list-elements li{
         min-width: 120px;
     }
@@ -264,9 +335,8 @@ p {
 
 @media only screen and (max-width: 1000px) {
     .nav-home {
-        float: left;
+        float: right;
         margin-left: 2vw;
-        width: 60vw;
     }
 
     .nav-home a {
@@ -279,7 +349,6 @@ p {
     .nav-list-elements{
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: repeat(4,1fr);
         grid-gap: 5vh;
         padding-top: 20vh;
         width: 30vw;
@@ -321,4 +390,20 @@ p {
         top: 2vh;
     }
 
+    .organiser-content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'portrait'
+                             'description';
+    }
+
+    .organiser-portrait {
+        grid-area: portrait;
+        width: 40vw;
+        height: 40vw;
+        margin: 0 auto;
+    }
+
+    .organiser-description {
+        grid-area: description;
+    }
 }
