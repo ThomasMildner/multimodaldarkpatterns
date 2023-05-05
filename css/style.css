@@ -389,10 +389,33 @@ p {
 
     .burger-menu {
         position: relative;
-        height: 8vh;
+        height: 10vh;
         top: 2vh;
     }
 
+    /** HOME **/
+    #home-wrapper {
+        grid-template-rows: 6vh 30vh auto;
+    }
+
+    #home-title {
+        width: 90vw;
+    }
+
+    #home-title {
+        width: 100vw;
+    }
+
+    #home-title h1, h2, h3 {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    #home-info-wrapper {
+        width: 90vw;
+    }
+
+    /** ORGANISERS **/
     .organiser-content {
         grid-template-columns: 1fr;
         grid-template-areas: 'portrait'
@@ -410,4 +433,6 @@ p {
     .organiser-description {
         grid-area: description;
     }
+
+
 }
