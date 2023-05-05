@@ -300,7 +300,7 @@ p {
 
 .organiser-portrait {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     background-color: red;
     object-fit: cover;
     border-radius: 20px;
