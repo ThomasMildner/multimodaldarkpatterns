@@ -299,8 +299,11 @@ p {
 }
 
 .organiser-portrait {
-    height: 100%;
-
+    width: 100%;
+    height: 30vh;
+    background-color: red;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 
@@ -400,6 +403,7 @@ p {
         grid-area: portrait;
         width: 40vw;
         height: 40vw;
+        object-fit: cover;
         margin: 0 auto;
     }
 

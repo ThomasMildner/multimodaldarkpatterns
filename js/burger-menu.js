@@ -2,15 +2,13 @@ let menuButton = document.querySelector('button');
 let navList = document.getElementById('nav-list');
 
 let about = document.getElementById('about-link');
-let accept = document.getElementById('accepted-link');
+// let accept = document.getElementById('accepted-link');
 let call = document.getElementById('call-link');
-let contact = document.getElementById('contact-link');
 let orga = document.getElementById('orga-link');
 
 about.addEventListener('click', toggleNavigation);
-accept.addEventListener('click', toggleNavigation);
+// accept.addEventListener('click', toggleNavigation);
 call.addEventListener('click', toggleNavigation);
-contact.addEventListener('click', toggleNavigation);
 orga.addEventListener('click', toggleNavigation);
 
 
