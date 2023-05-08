@@ -280,6 +280,19 @@ p {
     padding-left: 2vh;
 }
 
+/***********************************/
+/***                             ***/
+/***         CALL PAGE           ***/
+/***                             ***/
+/***********************************/
+#submit-paper {
+    color: #ffffff;
+    display: flex;
+    align-content: end;
+    font-weight: 400;
+}
+
+
 /**********************************/
 /***                            ***/
 /***         ORGANISERS         ***/
@@ -301,7 +314,6 @@ p {
 .organiser-portrait {
     width: 100%;
     height: 40vh;
-    background-color: red;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -415,17 +427,30 @@ p {
         width: 90vw;
     }
 
+    /** CONTENT **/
+    .content-wrapper {
+        grid-template-rows: 6vh 20vh auto;
+    }
+
+    .content-title {
+        width: 90vw;
+    }
+    .content-text {
+        width: 90vw;
+    }
+
     /** ORGANISERS **/
     .organiser-content {
         grid-template-columns: 1fr;
         grid-template-areas: 'portrait'
                              'description';
+        padding-bottom: 8vh;
     }
 
     .organiser-portrait {
         grid-area: portrait;
-        width: 40vw;
-        height: 40vw;
+        width: 60vw;
+        height: 60vw;
         object-fit: cover;
         margin: 0 auto;
     }

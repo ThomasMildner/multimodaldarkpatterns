@@ -1,3 +1,3 @@
-let encMail = 'Y29udGFjdEB0aG9tYXNtaWxkbmVyLm1l'
+let encMail = 'bXVsdGltb2RhbGRhcmtwYXR0ZXJuc0BnbWFpbC5jb20='
 const form  = document.getElementById('submit-paper')
-form.setAttribute('href', 'mailto:'.concat(atob(encMail)))
+form.setAttribute('href', 'mailto:'.concat(atob(encMail),'?subject=Submission for the Multimodal Dark Patterns Workshop at CUI23'))
